@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/config/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/header/header.css" />
+    <title>Marcos Dominguez do Pazo</title>
+  </head>
+  <body>
+    <header class="header padding-sides">
+      <h2>PORTFOLIO</h2>
+      <nav class="header__nav">
+        <ul>
+          <li>Sobre mi</li>
+          <li>Skills</li>
+          <li>Hobbies</li>
+          <li>Formacion</li>
+          <li>Proyectos</li>
+        </ul>
+      </nav>
+      <button id="header__hamburger">
+        <li></li>
+        <li></li>
+        <li></li>
+      </button>
+      <div class="header__nav-mobile hidden" id="header__nav-mobile">
+        <ul>
+          <li>Sobre mi</li>
+          <li>Skills</li>
+          <li>Hobbies</li>
+          <li>Formacion</li>
+          <li>Proyectos</li>
+        </ul>
+      </div>
+    </header>
+    <div class="hero padding-sides"></div>
+
+    <script>
+      const navMobile = document.getElementById("header__nav-mobile");
+      const hamburgerButton = document.getElementById("header__hamburger");
+      console.log(navMobile);
+      hamburgerButton.addEventListener("click", () => {
+        console.log(navMobile);
+        navMobile.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
