@@ -11,7 +11,18 @@
   </head>
   <body>
     <header class="header padding-sides">
-      <h2>PORTFOLIO</h2>
+      <div class="header__title" id="header__title">
+        <h2>P</h2>
+        <h2>O</h2>
+        <h2>R</h2>
+        <h2>T</h2>
+        <h2>F</h2>
+        <h2>O</h2>
+        <h2>L</h2>
+        <h2>I</h2>
+        <h2>O</h2>
+      </div>
+
       <nav class="header__nav">
         <ul>
           <li>Sobre mi</li>
@@ -36,16 +47,9 @@
         </ul>
       </div>
     </header>
+    <div class="fog hidden" id="fog"></div>
     <div class="hero padding-sides"></div>
 
-    <script>
-      const navMobile = document.getElementById("header__nav-mobile");
-      const hamburgerButton = document.getElementById("header__hamburger");
-      console.log(navMobile);
-      hamburgerButton.addEventListener("click", () => {
-        console.log(navMobile);
-        navMobile.classList.toggle("hidden");
-      });
-    </script>
+    <script type="text/javascript" src="script/hambuger.js"></script>
   </body>
 </html>
