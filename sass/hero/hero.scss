@@ -1,0 +1,106 @@
+.hero {
+  height: 420px;
+  width: 100vw;
+  background-color: var(--dark-jungle-green);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+
+  .hero__text {
+    .text__myname {
+      .hello {
+        color: var(--magnolia);
+        font-size: 23.5px;
+        font-weight: bold;
+        //margin-bottom: 2.5px;
+      }
+
+      .name {
+        color: var(--maya-blue);
+        font-size: 36.5px;
+        font-weight: bold;
+        margin-bottom: 15px;
+      }
+    }
+
+    .text__info {
+      font-size: 18px;
+      color: var(--magnolia);
+
+      p {
+        margin-bottom: 2.5px;
+      }
+    }
+
+    .text__downloadcv {
+      margin-top: 17.5px;
+      color: var(--magnolia);
+      width: 180px;
+      height: 50px;
+      border-radius: 5px;
+      border: 0.5px solid var(--maya-blue);
+      background: rgb(9, 58, 61);
+      background: linear-gradient(
+        0deg,
+        rgba(9, 58, 61, 1) 0%,
+        rgba(12, 89, 93, 1) 43%,
+        rgba(15, 122, 129, 1) 62%,
+        rgba(22, 186, 197, 1) 100%
+      );
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 7px;
+      div {
+        padding-bottom: 4px;
+
+        svg {
+          fill: var(--magnolia);
+        }
+
+        #flechadowload {
+          animation: flechadowload 1.25s infinite;
+          animation-direction: alternate;
+        }
+      }
+
+      &:hover #flechadowload {
+        animation: flechadowload 0.5s infinite;
+        animation-direction: alternate;
+      }
+
+      &:hover {
+        box-shadow: 0 0 5px 0 #16bac5 inset, 0 0 5px 2px #16bac5;
+        background: linear-gradient(
+          0deg,
+          rgba(9, 58, 61, 1) 0%,
+          rgba(12, 89, 93, 1) 35%,
+          rgba(15, 122, 129, 1) 55%,
+          rgba(22, 186, 197, 1) 100%
+        );
+      }
+    }
+  }
+
+  .hero__img {
+    /* height: 325px;
+          width: 325px;
+          background-image: url("../assets/img/vectorpaint.svg");
+          background-size: cover;
+          background-repeat: no-repeat;*/
+    width: 245px;
+    padding-top: 50px;
+  }
+}
+
+@keyframes flechadowload {
+  from {
+    transform: translateY(-2px);
+  }
+
+  to {
+    transform: translateY(0.5px);
+  }
+}

@@ -17,62 +17,11 @@
 body {
   font-family: "Roboto", sans-serif;
   background-color: var(--dark-jungle-green-95);
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .padding-sides {
   padding: 0 var(--padding-sides);
-}
-
-.hero {
-  height: 420px;
-  width: 100vw;
-  background-color: var(--dark-jungle-green);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.hero .hero__text .text__myname .hello {
-  color: var(--magnolia);
-  font-size: 23.5px;
-  font-weight: bold;
-}
-.hero .hero__text .text__myname .name {
-  color: var(--maya-blue);
-  font-size: 36.5px;
-  font-weight: bold;
-  margin-bottom: 15px;
-}
-.hero .hero__text .text__info {
-  font-size: 18px;
-  color: var(--magnolia);
-}
-.hero .hero__text .text__info p {
-  margin-bottom: 2.5px;
-}
-.hero .hero__text .text__downloadcv {
-  margin-top: 17.5px;
-}
-.hero .hero__text .text__downloadcv a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  color: var(--magnolia);
-  width: 180px;
-  height: 50px;
-  border-radius: 5px;
-  border: 0.5px solid var(--maya-blue);
-  background: #093a3d;
-  background: linear-gradient(0deg, #093a3d 0%, #0c595d 43%, #0f7a81 62%, #16bac5 100%);
-}
-.hero .hero__img {
-  /* height: 325px;
-      width: 325px;
-      background-image: url("../assets/img/vectorpaint.svg");
-      background-size: cover;
-      background-repeat: no-repeat;*/
-  width: 230px;
 }
 
 .fog {
