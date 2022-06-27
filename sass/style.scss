@@ -27,8 +27,6 @@ body {
   padding: 0 var(--padding-sides);
 }
 
-
-
 .fog {
   background-color: rgba(23, 29, 28, 0.65);
   filter: blur(10px);
@@ -44,11 +42,14 @@ body {
 }
 
 @keyframes o-rotate-360 {
-    0% { transform: rotate(0) }
-  
-    100% { transform: rotate(360deg) }
+  0% {
+    transform: rotate(0);
   }
 
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 /*media querys*/
 @media only screen and (max-width: 992px) {
@@ -56,4 +57,17 @@ body {
     --padding-sides: 40px;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  :root {
+    --padding-sides: 22.5px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  :root {
+    --padding-sides: 15.5px;
+  }
+}
+
 /*media querys*/

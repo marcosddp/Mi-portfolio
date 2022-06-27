@@ -52,6 +52,16 @@ body {
     --padding-sides: 40px;
   }
 }
+@media only screen and (max-width: 600px) {
+  :root {
+    --padding-sides: 22.5px;
+  }
+}
+@media only screen and (max-width: 479px) {
+  :root {
+    --padding-sides: 15.5px;
+  }
+}
 /*media querys*/
 
 /*# sourceMappingURL=style.css.map */
