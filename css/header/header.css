@@ -32,8 +32,6 @@
 .header .header__nav-mobile {
   display: none;
   position: fixed;
-  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transform: translateX(0vw);
   top: 0px;
   right: 0px;
   width: 218.75px;
