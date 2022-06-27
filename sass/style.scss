@@ -2,7 +2,7 @@
 
 :root {
   /*paddings*/
-  --padding-sides: 13%;
+  --padding-sides: 11.5%;
   /*Paleta colores*/
   --maximum-blue-green: #16bac5;
   --maya-blue: #5fbff9;
@@ -53,7 +53,7 @@ body {
 /*media querys*/
 @media only screen and (max-width: 992px) {
   :root {
-    --padding-sides: 50px;
+    --padding-sides: 40px;
   }
 }
 /*media querys*/

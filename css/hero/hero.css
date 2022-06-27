@@ -6,15 +6,21 @@
   align-items: center;
   justify-content: space-between;
   position: relative;
+  overflow: hidden;
+}
+.hero .hero__text i {
+  margin-right: 3.5px;
+  width: 23px;
+  font-size: 14.8px;
 }
 .hero .hero__text .text__myname .hello {
   color: var(--magnolia);
-  font-size: 23.5px;
+  font-size: clamp(22.5px, 1.63vw, 23.5px);
   font-weight: bold;
 }
 .hero .hero__text .text__myname .name {
   color: var(--maya-blue);
-  font-size: 36.5px;
+  font-size: clamp(33.5px, 2.53vw, 36.5px);
   font-weight: bold;
   margin-bottom: 15px;
 }
@@ -26,7 +32,7 @@
   margin-bottom: 2.5px;
 }
 .hero .hero__text .text__downloadcv {
-  margin-top: 17.5px;
+  margin-top: 15px;
   color: var(--magnolia);
   width: 180px;
   height: 50px;
@@ -59,13 +65,8 @@
   background: linear-gradient(0deg, #093a3d 0%, #0c595d 35%, #0f7a81 55%, #16bac5 100%);
 }
 .hero .hero__img {
-  /* height: 325px;
-        width: 325px;
-        background-image: url("../assets/img/vectorpaint.svg");
-        background-size: cover;
-        background-repeat: no-repeat;*/
-  width: 245px;
-  padding-top: 50px;
+  width: clamp(210px, 18.06vw, 260px);
+  margin-top: auto;
 }
 
 @keyframes flechadowload {
@@ -76,5 +77,92 @@
     transform: translateY(0.5px);
   }
 }
+/*media querys*/
+@media only screen and (max-width: 992px) {
+  .hero {
+    height: 370px;
+    width: 100vw;
+  }
+  .hero .hero__img {
+    width: clamp(210px, 18.06vw, 260px);
+  }
+  .hero .hero__text i {
+    margin-right: 3.2px;
+    width: 21.5px;
+    font-size: 13.8px;
+  }
+  .hero .hero__text .text__myname .hello {
+    font-size: clamp(20.5px, 1.63vw, 23.5px);
+  }
+  .hero .hero__text .text__myname .name {
+    font-size: clamp(27.5px, 2.53vw, 36.5px);
+  }
+  .hero .hero__text .text__info {
+    font-size: 16.5px;
+    color: var(--magnolia);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .hero .hero__text i {
+    margin-right: 3.5px;
+    width: 23px;
+    font-size: 14.8px;
+  }
+  .hero .hero__text .text__myname .hello {
+    color: var(--magnolia);
+    font-size: clamp(22.5px, 1.63vw, 23.5px);
+    font-weight: bold;
+  }
+  .hero .hero__text .text__myname .name {
+    color: var(--maya-blue);
+    font-size: clamp(33.5px, 2.53vw, 36.5px);
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  .hero .hero__text .text__info {
+    font-size: 18px;
+    color: var(--magnolia);
+  }
+  .hero .hero__text .text__info p {
+    margin-bottom: 2.5px;
+  }
+  .hero .hero__text .text__downloadcv {
+    margin-top: 15px;
+    color: var(--magnolia);
+    width: 180px;
+    height: 50px;
+    border-radius: 5px;
+    border: 0.5px solid var(--maya-blue);
+    background: #093a3d;
+    background: linear-gradient(0deg, #093a3d 0%, #0c595d 43%, #0f7a81 62%, #16bac5 100%);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 7px;
+  }
+  .hero .hero__text .text__downloadcv div {
+    padding-bottom: 4px;
+  }
+  .hero .hero__text .text__downloadcv div svg {
+    fill: var(--magnolia);
+  }
+  .hero .hero__text .text__downloadcv div #flechadowload {
+    animation: flechadowload 1.25s infinite;
+    animation-direction: alternate;
+  }
+  .hero .hero__text .text__downloadcv:hover #flechadowload {
+    animation: flechadowload 0.5s infinite;
+    animation-direction: alternate;
+  }
+  .hero .hero__text .text__downloadcv:hover {
+    box-shadow: 0 0 5px 0 #16bac5 inset, 0 0 5px 2px #16bac5;
+    background: linear-gradient(0deg, #093a3d 0%, #0c595d 35%, #0f7a81 55%, #16bac5 100%);
+  }
+  .hero .hero__img {
+    display: none;
+  }
+}
+/*media querys*/
 
 /*# sourceMappingURL=hero.css.map */
