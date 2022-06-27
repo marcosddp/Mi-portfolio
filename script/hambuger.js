@@ -3,24 +3,27 @@ const fog = document.getElementById("fog");
 const hamburgerButton = document.getElementById("header__hamburger");
 const iHamburger = hamburgerButton.querySelectorAll("i");
 
-hamburgerButton.addEventListener("click", () => {
+function menuToggleHidden() {
   navMobile.classList.toggle("hidden");
   fog.classList.toggle("hidden");
   hamburgerButton.classList.toggle("menu-open");
   hamburgerButton.classList.toggle("menu-close");
+}
+
+hamburgerButton.addEventListener("click", () => {
+  menuToggleHidden();
 });
 
 fog.addEventListener("click", () => {
-  navMobile.classList.toggle("hidden");
-  fog.classList.toggle("hidden");
-  hamburgerButton.classList.toggle("menu-open");
-  hamburgerButton.classList.toggle("menu-close");
+  menuToggleHidden();
 });
 
 function only768(x) {
   if (x.matches) {
     navMobile.classList.add("hidden");
     fog.classList.add("hidden");
+    hamburgerButton.classList.remove("menu-open");
+    hamburgerButton.classList.add("menu-close");
   }
 }
 /*

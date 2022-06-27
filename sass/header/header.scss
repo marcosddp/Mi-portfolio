@@ -1,6 +1,6 @@
 .header {
   width: 100vw;
-  height: 75px;
+  height: var(--header);
   background-color: var(--dark-jungle-green);
   display: flex;
   justify-content: space-between;

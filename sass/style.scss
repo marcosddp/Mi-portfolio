@@ -13,6 +13,8 @@
   /*z-index*/
   --z-index-nav-mobile: 1000000;
   --z-index-fog: calc(var(--z-index-nav-mobile) - 150);
+  /*variables*/
+  --header:75px;
 }
 
 body {
