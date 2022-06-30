@@ -29,6 +29,11 @@ body {
   padding: 0 var(--padding-sides);
 }
 
+.padding-top-bottom{
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+
 .fog {
   background-color: rgba(23, 29, 28, 0.65);
   filter: blur(10px);
@@ -41,6 +46,12 @@ body {
 
 .hidden {
   display: none !important;
+}
+
+.title-sections{
+  font-size: 32.76px;
+  font-weight: bold;
+  color:var(--magnolia);
 }
 
 @keyframes o-rotate-360 {

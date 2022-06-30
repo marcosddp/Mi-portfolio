@@ -1,3 +1,72 @@
+.about {
+  display: flex;
+  column-gap: clamp(45px, 6.94vw, 100px);
+}
+.about .about__photo {
+  height: 300px;
+  width: 280px;
+  flex: 0 0 295px;
+  border-radius: 3.5px;
+  background-image: url("../../assets/img/yo2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+  position: relative;
+  /*&::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(11, 241, 203, 0.95);
+    filter: blur(3px);
+    width: 100%;
+    height: 100%;
+    z-index: var(--z-index-before);
+  }*/
+}
+.about .about__photo .photo__line {
+  height: 100%;
+  width: 3.65px;
+  background-color: var(--maya-blue);
+}
+.about .about__text {
+  display: flex;
+  flex-direction: column;
+}
+.about .about__text h3 {
+  margin-bottom: 15px;
+}
+.about .about__text .about__p {
+  display: flex;
+  flex-direction: column;
+  row-gap: 7.5px;
+  font-size: 15.21px;
+  color: #e0e2db;
+}
+.about .about__text .text__social {
+  display: flex;
+  column-gap: 15px;
+  margin-top: 20px;
+}
+.about .about__text .text__social a {
+  height: 45px;
+  width: 45px;
+  background-color: var(--dark-jungle-green);
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 3.5px;
+}
 
+/*media querys*/
+@media only screen and (max-width: 992px) {
+  .about {
+    display: flex;
+    column-gap: clamp(35px, 6.55vw, 70px);
+  }
+  .about .about__photo {
+    height: 300px;
+    width: 280px;
+  }
+}
+/*media querys*/
 
 /*# sourceMappingURL=about.css.map */
