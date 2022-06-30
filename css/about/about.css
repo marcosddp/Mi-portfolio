@@ -60,11 +60,38 @@
 @media only screen and (max-width: 992px) {
   .about {
     display: flex;
-    column-gap: clamp(35px, 6.55vw, 70px);
+    column-gap: clamp(35px, 6.05vw, 70px);
+  }
+}
+@media only screen and (max-width: 769px) {
+  .about {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: clamp(35px, 6.05vw, 70px);
+    justify-content: center;
   }
   .about .about__photo {
-    height: 300px;
-    width: 280px;
+    height: 290px;
+    width: 270px;
+    order: 2;
+    margin-top: 35px;
+  }
+  .about .about__text {
+    order: 1;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .about {
+    display: flex;
+    column-gap: clamp(45px, 6.94vw, 100px);
+  }
+  .about .about__photo {
+    height: 280px;
+    width: 260px;
+  }
+  .about .about__text .about__p {
+    font-size: 14.21px;
+    color: #e0e2db;
   }
 }
 /*media querys*/
