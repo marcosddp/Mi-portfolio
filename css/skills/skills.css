@@ -1,0 +1,67 @@
+.skills {
+  background-color: var(--dark-jungle-green);
+}
+.skills h3 {
+  text-align: center;
+  margin-bottom: 32px;
+}
+.skills .skills__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 22.5px;
+}
+.skills .skills__container .skill {
+  width: 156px;
+  height: 154px;
+  border-radius: 3.5px;
+  border: 1px solid var(--maya-blue);
+  padding: 0 16px 16px 16px;
+  display: flex;
+  flex-direction: column;
+}
+.skills .skills__container .skill img {
+  margin-top: auto;
+  margin-bottom: 9.5px;
+}
+.skills .skills__container .skill p {
+  color: var(--magnolia);
+  font-family: var(--raleway);
+}
+.skills .skills__container .skill #skill__html {
+  width: 27.5px;
+  height: 27.5px;
+}
+.skills .skills__container .skill #skill__css {
+  width: 27.5px;
+  height: 27.5px;
+}
+.skills .skills__container .skill #skill__javascript {
+  width: 29.5px;
+  height: 29.5px;
+  margin-bottom: 7.25px;
+}
+.skills .skills__container .skill #skill__vuejs {
+  width: 32.5px;
+  height: 32.5px;
+}
+.skills .skills__container .skill #skill__python {
+  width: 27.5px;
+  height: 27.5px;
+}
+.skills .skills__container .skill #skill__mysql {
+  width: 34.5px;
+  height: 34.5px;
+}
+
+@media only screen and (max-width: 479px) {
+  .skills .skills__container {
+    gap: 15.5px;
+  }
+  .skills .skills__container .skill {
+    width: 146px;
+    height: 144px;
+  }
+}
+
+/*# sourceMappingURL=skills.css.map */
