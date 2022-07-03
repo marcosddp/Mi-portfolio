@@ -2,10 +2,12 @@ const navMobile = document.getElementById("header__nav-mobile");
 const fog = document.getElementById("fog");
 const hamburgerButton = document.getElementById("header__hamburger");
 const iHamburger = hamburgerButton.querySelectorAll("i");
+const body=document.getElementById("body")
 
 function menuToggleHidden() {
   navMobile.classList.toggle("hidden");
   fog.classList.toggle("hidden");
+  body.classList.toggle("overflow-active")
   hamburgerButton.classList.toggle("menu-open");
   hamburgerButton.classList.toggle("menu-close");
 }

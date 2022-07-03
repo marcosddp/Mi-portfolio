@@ -1,0 +1,30 @@
+.skills {
+  background-color: var(--dark-jungle-green);
+}
+.skills #skill__html {
+  width: 27.5px;
+  height: 27.5px;
+}
+.skills #skill__css {
+  width: 27.5px;
+  height: 27.5px;
+}
+.skills #skill__javascript {
+  width: 29.5px;
+  height: 29.5px;
+  margin-bottom: 7.25px;
+}
+.skills #skill__vuejs {
+  width: 32.5px;
+  height: 32.5px;
+}
+.skills #skill__python {
+  width: 27.5px;
+  height: 27.5px;
+}
+.skills #skill__mysql {
+  width: 34.5px;
+  height: 34.5px;
+}
+
+/*# sourceMappingURL=skills.css.map */

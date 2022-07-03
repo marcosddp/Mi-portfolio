@@ -1,0 +1,35 @@
+.hobbies {
+  background-color: var(--dark-jungle-green);
+}
+.hobbies h3 {
+  text-align: center;
+  margin-bottom: 32px;
+}
+.hobbies #hobbies__pesca {
+  width: 36.5px;
+  height: 36.5px;
+}
+.hobbies #hobbies__pc {
+  width: 42.5px;
+  height: 42.5px;
+  margin-bottom: 5.5px !important;
+}
+.hobbies #hobbies__games {
+  width: 38.5px;
+  height: 38.5px;
+  margin-bottom: 5.5px !important;
+}
+.hobbies #hobbies__walk {
+  width: 38.5px;
+  height: 38.5px;
+}
+.hobbies #hobbies__read {
+  width: 34.5px;
+  height: 34.5px;
+}
+.hobbies #hobbies__music {
+  width: 37.5px;
+  height: 37.5px;
+}
+
+/*# sourceMappingURL=hobbies.css.map */
