@@ -77,6 +77,9 @@
         .text__p {
           //height: 105px;
           margin-bottom: 20px;
+          display: flex;
+          flex-direction: column;
+          row-gap: 3.85px;
 
           p {
             color: var(--alabaster);

@@ -65,6 +65,9 @@
 }
 .proyectos .proyectos__container .container__proyecto .proyecto__text .text__p {
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 3.85px;
 }
 .proyectos .proyectos__container .container__proyecto .proyecto__text .text__p p {
   color: var(--alabaster);
