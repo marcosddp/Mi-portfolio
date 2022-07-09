@@ -1,4 +1,9 @@
-.proyectos h3 {
+.proyectos {
+  --cantidad-proyectos: 3;
+  width: 100%;
+  overflow: hidden;
+}
+.proyectos .title-sections {
   text-align: center;
 }
 .proyectos h4 {
@@ -8,35 +13,105 @@
   margin-bottom: 56px;
 }
 .proyectos .proyectos__container {
-  padding: 0 20px;
+  width: calc(100% * var(--cantidad-proyectos));
+  padding: 0 15px;
+  display: flex;
+  flex-flow: row nowrap;
+  transition: all 0.5s ease;
+  transform: translateX(0%);
 }
 .proyectos .proyectos__container .container__proyecto {
+  width: calc(100% / var(--cantidad-proyectos));
   display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
   justify-content: space-between;
+  column-gap: 50px;
+  margin-right: 450px;
 }
 .proyectos .proyectos__container .container__proyecto .proyecto__img {
-  width: 400px;
+  flex: 0 1 calc(50% - 25px);
+  max-width: 450px;
   height: 220.5px;
   border-radius: 3.5px;
   overflow: hidden;
+  background-size: cover;
+}
+.proyectos .proyectos__container .container__proyecto .encriptador {
+  background-image: url("../../assets/img/encriptador.jpg");
+  background-position: center center;
+}
+.proyectos .proyectos__container .container__proyecto .country-quiz {
+  background-image: url("../../assets/img/country-quiz.jpg");
+  background-position: center top;
+}
+.proyectos .proyectos__container .container__proyecto .audiophile {
+  background-image: url("../../assets/img/audiophile.jpg");
+  background-position: center center;
 }
 .proyectos .proyectos__container .container__proyecto .proyecto__text {
-  width: 400px;
+  flex: 0 1 calc(50% - 25px);
+  height: 223px;
+  max-width: 450px;
 }
-.proyectos .proyectos__container .container__proyecto .proyecto__text h5 {
+.proyectos .proyectos__container .container__proyecto .proyecto__text .text__titulo {
   font-size: 24.76px;
   font-weight: bold;
   color: var(--magnolia);
   text-align: left;
   margin-bottom: 15px;
 }
-.proyectos .proyectos__container .container__proyecto .proyecto__text p {
+.proyectos .proyectos__container .container__proyecto .proyecto__text .text__p {
+  height: 110px;
+}
+.proyectos .proyectos__container .container__proyecto .proyecto__text .text__p p {
   color: var(--alabaster);
   font-size: 14.5px;
 }
 .proyectos .proyectos__container .container__proyecto .proyecto__text .text__links {
   margin-top: 30px;
   display: flex;
+}
+.proyectos .proyectos__container .container__proyecto .proyecto__text .text__links a {
+  margin-left: 20px;
+  font-size: 14.75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3.5px;
+  border: 1px solid var(--maya-blue);
+  height: 40px;
+  width: 100px;
+  color: var(--magnolia);
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.15s font-size;
+}
+.proyectos .proyectos__container .container__proyecto .proyecto__text .text__links a:first-child {
+  margin-left: 0;
+}
+.proyectos .proyectos__container .container__proyecto .proyecto__text .text__links a i {
+  margin-left: 5.5px;
+  font-size: 13.5px;
+}
+.proyectos .proyectos__container .container__proyecto .proyecto__text .text__links a:hover {
+  font-size: 15.75px;
+}
+.proyectos .proyectos__menu {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  column-gap: 20px;
+  color: var(--maya-blue);
+  font-size: 30.75px;
+  font-weight: bold;
+}
+.proyectos .proyectos__menu button {
+  cursor: pointer;
+  width: 27px;
+}
+.proyectos .proyectos__menu button:active {
+  font-size: 24.75px;
 }
 
 /*# sourceMappingURL=proyectos.css.map */

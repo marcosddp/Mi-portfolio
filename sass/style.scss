@@ -55,7 +55,14 @@ body {
 
 .hidden {
   display: none !important;
+  
 }
+
+
+.visibility-hidden{
+  visibility: hidden;
+}
+
 
 .overflow-active{
   overflow: hidden;
