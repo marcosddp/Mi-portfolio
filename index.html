@@ -16,6 +16,7 @@
   <link rel="stylesheet" type="text/css" href="css/boxsinfo/skills.css" />
   <link rel="stylesheet" type="text/css" href="css/boxsinfo/hobbies.css" />
   <link rel="stylesheet" type="text/css" href="css/proyectos/proyectos.css" />
+  <link rel="stylesheet" type="text/css" href="css/footer/footer.css" />
   <title>Marcos Dominguez do Pazo</title>
 </head>
 
@@ -35,11 +36,11 @@
 
     <nav class="header__nav">
       <ul>
-        <li>Sobre mi</li>
-        <li>Skills</li>
-        <li>Hobbies</li>
-        <li>Formacion</li>
-        <li>Proyectos</li>
+        <li><a href="#about">Sobre mi</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#">Formacion</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
       </ul>
     </nav>
     <!--type="button"-->
@@ -50,8 +51,8 @@
     </button>
     <div class="header__nav-mobile hidden" id="header__nav-mobile">
       <ul>
-        <li>Sobre mi</li>
-        <li>Skills</li>
+        <li><a href="#about">Sobre mi</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li>Hobbies</li>
         <li>Formacion</li>
         <li>Proyectos</li>
@@ -103,7 +104,7 @@
       </div>
     </section>
 
-    <section class="about padding-sides padding-top padding-bottom">
+    <section class="about padding-sides padding-top padding-bottom" id="about">
       <div class="about__photo">
         <div class="photo__line"></div>
       </div>
@@ -131,7 +132,7 @@
         </div>
     </section>
 
-    <section class="boxs skills padding-sides padding-top padding-bottom">
+    <section class="boxs skills padding-sides padding-top padding-bottom" id="skills">
 
       <h3 class="title-sections">Skills</h3>
       <div class="boxs__container">
@@ -175,7 +176,7 @@
 
 
 
-    <section class="hobbies boxs padding-sides padding-bottom">
+    <section class="hobbies boxs padding-sides padding-bottom" id="hobbies">
       <h3 class="title-sections">Hobbies</h3>
 
       <div class="boxs__container">
@@ -215,7 +216,7 @@
       </div>
     </section>
 
-    <section class="proyectos  padding-sides padding-top padding-bottom ">
+    <section class="proyectos  padding-sides padding-top padding-bottom " id="proyectos">
       <h3 class="title-sections">Proyectos</h3>
       <h4>Mis últimos proyectos</h4>
 
@@ -305,6 +306,10 @@
     </section>
 
   </main>
+  <footer class="footer padding-sides">
+    <p>Desarrollado por <a href="https://www.linkedin.com/in/marcos-ddp/">Marcos Dominguez do Pazo</a></p>
+    <p>2022</p>
+  </footer>
 
   <script type="text/javascript" src="script/hambuger.js"></script>
   <script type="text/javascript" src="script/carrusel-proyectos.js"></script>
