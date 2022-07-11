@@ -1,6 +1,8 @@
 .proyectos {
   --cantidad-proyectos: 3;
   --padding-sides-proyectos: 15px;
+  padding-left: calc(var(--padding-sides) + var(--padding-sides-proyectos));
+  padding-right: calc(var(--padding-sides) + var(--padding-sides-proyectos));
   width: 100%;
   overflow: hidden;
 }
@@ -15,7 +17,6 @@
 }
 .proyectos .proyectos__container {
   width: calc(100% * var(--cantidad-proyectos));
-  padding: 0 var(--padding-sides-proyectos);
   display: flex;
   flex-flow: row nowrap;
   transition: all 0.5s ease;
@@ -27,34 +28,33 @@
   flex-grow: 0;
   flex-shrink: 0;
   justify-content: space-between;
-  column-gap: 50px;
+  column-gap: 65px;
   margin-right: 450px;
 }
 .proyectos .proyectos__container .container__proyecto .proyecto__img {
   flex-shrink: 1;
   width: calc(50% - 25px);
-  max-width: 450px;
-  height: 220.5px;
+  max-width: 485px;
   border-radius: 3.5px;
   overflow: hidden;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 .proyectos .proyectos__container .container__proyecto .encriptador {
-  background-image: url("../../assets/img/encriptador.jpg");
-  background-position: center center;
+  background-image: url("../../assets/img/encriptador-min.jpg");
 }
 .proyectos .proyectos__container .container__proyecto .country-quiz {
-  background-image: url("../../assets/img/country-quiz.jpg");
+  background-image: url("../../assets/img/country-quiz-min.jpg");
   background-position: center top;
 }
 .proyectos .proyectos__container .container__proyecto .audiophile {
-  background-image: url("../../assets/img/audiophile.jpg");
+  background-image: url("../../assets/img/audiophile-min.jpg");
   background-position: center center;
 }
 .proyectos .proyectos__container .container__proyecto .proyecto__text {
   width: calc(50% - 25px);
   flex-shrink: 1;
-  max-width: 450px;
+  max-width: 485px;
 }
 .proyectos .proyectos__container .container__proyecto .proyecto__text .text__titulo {
   font-size: 24.76px;
@@ -127,9 +127,6 @@
     font-size: 22.584px;
     margin-bottom: 13.5px;
   }
-  .proyectos .proyectos__container .container__proyecto .proyecto__text .text__p {
-    height: 125px;
-  }
   .proyectos .proyectos__container .container__proyecto .proyecto__text .text__p p {
     color: var(--alabaster);
     font-size: 14px;
@@ -157,9 +154,6 @@
     width: 425px;
     max-width: inherit;
     order: 1;
-  }
-  .proyectos .proyectos__container .container__proyecto .proyecto__text .text__p {
-    height: 95px;
   }
   .proyectos .proyectos__menu {
     margin-top: 69px;

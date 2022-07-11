@@ -1,6 +1,9 @@
 .proyectos {
   --cantidad-proyectos: 3;
   --padding-sides-proyectos: 15px;
+
+  padding-left: calc(var(--padding-sides) + var(--padding-sides-proyectos));
+  padding-right: calc(var(--padding-sides) + var(--padding-sides-proyectos));
   width: 100%;
   overflow: hidden;
   //despues crear una clase general
@@ -17,7 +20,8 @@
 
   .proyectos__container {
     width: calc(100% * var(--cantidad-proyectos));
-    padding: 0 var(--padding-sides-proyectos);
+   
+    //padding: 0 var(--padding-sides-proyectos);
     display: flex;
     flex-flow: row nowrap;
 
@@ -30,32 +34,33 @@
       flex-grow: 0;
       flex-shrink: 0;
       justify-content: space-between;
-      column-gap: 50px;
+      column-gap: 65px;
 
       margin-right: 450px;
 
       .proyecto__img {
         flex-shrink: 1;
         width: calc(50% - 25px);
-        max-width: 450px;
-        height: 220.5px;
+        max-width: 485px;
+        //max-height: 245.5px;
         border-radius: 3.5px;
         overflow: hidden;
+        background-repeat: no-repeat;
         background-size: cover;
       }
 
       .encriptador {
-        background-image: url("../../assets/img/encriptador.jpg");
-        background-position: center center;
+        background-image: url("../../assets/img/encriptador-min.jpg");
+        //background-position: center center;
       }
 
       .country-quiz {
-        background-image: url("../../assets/img/country-quiz.jpg");
+        background-image: url("../../assets/img/country-quiz-min.jpg");
         background-position: center top;
       }
 
       .audiophile {
-        background-image: url("../../assets/img/audiophile.jpg");
+        background-image: url("../../assets/img/audiophile-min.jpg");
         background-position: center center;
       }
 
@@ -64,7 +69,7 @@
         width: calc(50% - 25px);
         flex-shrink: 1;
         //height: 223px;
-        max-width: 450px;
+        max-width: 485px;
 
         .text__titulo {
           font-size: 24.76px;
@@ -157,7 +162,7 @@
           }
 
           .text__p {
-            height: 125px;
+            //height: 125px;
 
             p {
               color: var(--alabaster);
@@ -205,7 +210,7 @@
           order: 1;
 
           .text__p {
-            height: 95px;
+            //height: 95px;
           }
         }
       }
