@@ -1,0 +1,207 @@
+.formacion {
+  background-color: var(--dark-jungle-green);
+  .title-sections {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .formacion__titulos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+
+
+    .titulos__titulo{
+      width: calc(100% / 3);
+      .titulo__box {
+        width: 100%;
+        height: 220px;
+        border-radius: 3.5px;
+        border: 1px solid var(--maya-blue);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 27.27% 22.41%;
+  
+        img {
+          width: 100%;
+          max-width: 170px;
+          //height: 130px;
+        }
+      }
+
+      .titulo__text{
+        color:var(--magnolia);
+        margin-top: 8px;
+        //width: 100%;
+        width: 100%;
+        .text__nombre{
+            margin-bottom: 8px;
+            //font-size: 16.54px;
+            font-size: clamp(15.9px,1.28vw,18px);
+          }
+        
+          .text__fecha{
+            font-size: 14.5px;
+          }
+
+      }
+
+
+
+
+    }
+
+   
+  }
+}
+
+
+@media only screen and (max-width: 992px) {
+  .formacion {
+  
+    .title-sections {
+     
+    }
+  
+    .formacion__titulos {
+     
+      gap: 15.54px;
+  
+  
+      .titulos__titulo{
+       
+        .titulo__box {
+       
+          height: 168px;//
+         
+    
+          img {
+           
+          }
+        }
+  
+        .titulo__text{
+         
+          .text__nombre{
+             
+            }
+          
+            .text__fecha{
+              
+            }
+  
+        }
+  
+  
+  
+  
+      }
+  
+     
+    }
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .formacion {
+   
+    .title-sections {
+      
+    }
+  
+    .formacion__titulos {
+     
+      flex-direction: column;
+      
+      align-items: center;
+      gap: 25.75px;
+  
+  
+      .titulos__titulo{
+        width: 368px;//
+        .titulo__box {
+          width: 100%;//
+          height: 220px;//
+         
+    
+          img {
+            
+          }
+        }
+  
+        .titulo__text{
+         
+          .text__nombre{
+              
+            }
+          
+            .text__fecha{
+              
+            }
+  
+        }
+  
+  
+  
+  
+      }
+  
+     
+    }
+  }
+}
+
+
+@media only screen and (max-width: 479px) {
+  .formacion {
+   
+    .title-sections {
+     
+    }
+  
+    .formacion__titulos {
+    
+      
+  
+  
+      .titulos__titulo{
+        width: 85%;//
+        .titulo__box {
+          width: 100%;//
+          height: 220px;//
+         
+    
+          img {
+            width: 100%;
+            max-width: 170px;
+            //height: 130px;
+          }
+        }
+  
+        .titulo__text{
+         
+         
+          .text__nombre{
+            
+            }
+          
+            .text__fecha{
+             
+            }
+  
+        }
+  
+  
+  
+  
+      }
+  
+     
+    }
+  }
+}
+
+

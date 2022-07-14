@@ -102,6 +102,12 @@
   animation: hamburger3Open 0.8s forwards;
 }
 
+.position-fixed-hamburger {
+  position: fixed;
+  top: 25.5px;
+  right: var(--padding-sides);
+}
+
 /*media querys*/
 @media only screen and (min-width: 768px) {
   .header__nav-mobile {

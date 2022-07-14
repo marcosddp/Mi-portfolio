@@ -10,6 +10,7 @@ function menuToggleHidden() {
   body.classList.toggle("overflow-active")
   hamburgerButton.classList.toggle("menu-open");
   hamburgerButton.classList.toggle("menu-close");
+  hamburgerButton.classList.toggle("position-fixed-hamburger");
 }
 
 hamburgerButton.addEventListener("click", () => {
