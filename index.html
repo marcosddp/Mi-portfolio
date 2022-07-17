@@ -9,6 +9,8 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
   <link rel="stylesheet" type="text/css" href="css/config/reset.css" />
   <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/spinner/spinner.css" />
+  <link rel="stylesheet" type="text/css" href="css/scrollbar/scrollbar.css" />
   <link rel="stylesheet" type="text/css" href="css/header/header.css" />
   <link rel="stylesheet" type="text/css" href="css/hero/hero.css" />
   <link rel="stylesheet" type="text/css" href="css/about/about.css" />
@@ -22,7 +24,13 @@
   <title>Marcos Dominguez do Pazo</title>
 </head>
 
-<body id="body">
+<body id="body"  class="body--hidden">
+
+  <div id="loadingPage" >
+    <div class="lds-dual-ring"></div>
+  </div>
+
+
   <header class="header padding-sides">
     <div class="header__title" id="header__title">
       <h2>P</h2>
@@ -353,7 +361,7 @@
 
     </section>
 
-    <section class="contacto padding-sides padding-top padding-bottom ">
+    <section class="contacto padding-sides padding-top padding-bottom " id="contacto">
       <div class="contacto__img">
         <!--<img src="assets/img/telefono.png" alt="imagen form">-->
       </div>
@@ -366,11 +374,11 @@
         </div>
 
         <form class="text__form">
-          <input class="form__input" placeholder="Nombre">
-          <input class="form__input" placeholder="Email">
-          <input class="form__input" placeholder="Asunto">
+          <input class="form__input" type="text" placeholder="Nombre" id="nombre">
+          <input class="form__input" type="email" placeholder="Email" id="email">
+          <input class="form__input" type="text" placeholder="Asunto" id="asunto">
           <textarea class="form__textarea" placeholder="Mensaje"></textarea>
-          <button>Enviar mensaje</button>
+          <button id="enviar">Enviar mensaje</button>
         </form>
       </div>
 
@@ -383,6 +391,20 @@
     <p>Desarrollado por <a href="https://www.linkedin.com/in/marcos-ddp/">Marcos Dominguez do Pazo</a></p>
     <p>2022</p>
   </footer>
+
+  <script>
+    const loadingPage =  document.getElementById("loadingPage");
+window.onload = function(){
+    console.log("aaa")
+  setTimeout(function(){
+    loadingPage.style.opacity = "0.45";
+    setTimeout(function(){
+      loadingPage.style.display = "none";
+      document.getElementById("body").classList.toggle("body--hidden");
+    }, 650);
+  },1100);
+}
+  </script>
 
   <script type="text/javascript" src="script/hambuger.js"></script>
   <script type="text/javascript" src="script/carrusel-proyectos.js"></script>
