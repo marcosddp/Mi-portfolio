@@ -1,5 +1,5 @@
 .proyectos {
-  --cantidad-proyectos: 3;
+  --cantidad-proyectos: 4;
   --padding-sides-proyectos: 15px;
   padding-left: calc(var(--padding-sides) + var(--padding-sides-proyectos));
   padding-right: calc(var(--padding-sides) + var(--padding-sides-proyectos));
@@ -50,6 +50,9 @@
 .proyectos .proyectos__container .container__proyecto .audiophile {
   background-image: url("../../assets/img/audiophile-min.jpg");
   background-position: center center;
+}
+.proyectos .proyectos__container .container__proyecto .todo-app {
+  background-image: url("../../assets/img/todoapp.jpg");
 }
 .proyectos .proyectos__container .container__proyecto .proyecto__text {
   width: calc(50% - 25px);

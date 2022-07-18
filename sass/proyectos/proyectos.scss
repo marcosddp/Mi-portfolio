@@ -1,5 +1,5 @@
 .proyectos {
-  --cantidad-proyectos: 3;
+  --cantidad-proyectos: 4;
   --padding-sides-proyectos: 15px;
 
   padding-left: calc(var(--padding-sides) + var(--padding-sides-proyectos));
@@ -62,6 +62,10 @@
       .audiophile {
         background-image: url("../../assets/img/audiophile-min.jpg");
         background-position: center center;
+      }
+
+      .todo-app{
+        background-image: url("../../assets/img/todoapp.jpg");
       }
 
       .proyecto__text {
