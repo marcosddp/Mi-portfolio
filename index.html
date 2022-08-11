@@ -400,10 +400,10 @@
         </div>
 
         <form class="text__form" name="contact" netlify>
-          <input class="form__input" type="text" name="nombre" placeholder="Nombre" id="nombre">
-          <input class="form__input" type="email"  name="email" placeholder="Email" id="email">
-          <input class="form__input" type="text" name="asunto" placeholder="Asunto" id="asunto">
-          <textarea class="form__textarea" name="mensaje" placeholder="Mensaje"></textarea>
+          <input class="form__input" type="text" name="nombre" placeholder="Nombre" id="nombre" required minlength="3">
+          <input class="form__input" type="email"  name="email" placeholder="Email" id="email" required minlength="5">
+          <input class="form__input" type="text" name="asunto" placeholder="Asunto" id="asunto" required minlength="3">
+          <textarea class="form__textarea" name="mensaje" placeholder="Mensaje" minlength="6"></textarea>
           <button type="submit" id="enviar">Enviar mensaje</button>
         </form>
       </div>
